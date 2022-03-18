@@ -2,20 +2,7 @@ const InlineChunkHtmlPlugin = require('inline-chunk-html-plugin'),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
   path = require('path');
 
-let plugins = [
-  new HtmlWebpackPlugin({
-    template: './app/pug/index.pug',
-    filename: 'ui.html',
-    inject: 'body',
-    chunks: ['ui'],
-  }),
-];
-
-let mode = 'development';
-if (process.env.NODE_ENV === 'production') {
-  mode = 'production';
-  plugins.push(new InlineChunkHtmlPlugin(HtmlWebpackPlugin, ['.js$']))
-}
+let mode = process.env.NODE_ENV;
 
 module.exports = {
   mode: mode,
@@ -40,5 +27,13 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  plugins: plugins,
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './app/pug/index.pug',
+      filename: 'ui.html',
+      inject: 'body',
+      chunks: ['ui'],
+    }),
+    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, ['.js$']),
+  ],
 };
