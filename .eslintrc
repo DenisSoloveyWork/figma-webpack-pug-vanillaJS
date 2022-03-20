@@ -1,4 +1,8 @@
 {
+  "globals": {
+    "figma": "readonly",
+    "__html__": "readonly"
+  },
   "env": {
     "browser": true,
     "node": true,

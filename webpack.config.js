@@ -16,7 +16,7 @@ module.exports = {
       {
         test: /\.pug$/,
         exclude: /(node_modules|bower_components)/,
-        use: 'pug-loader',
+        loader: 'pug-loader',
       },
       { test: /\.(sass|scss|css)$/, use: ['style-loader', { loader: 'css-loader' }, 'sass-loader'] },
       { test: /\.(png|jpg|gif|webp|svg)$/, loader: 'url-loader' },
@@ -33,6 +33,7 @@ module.exports = {
       filename: 'ui.html',
       inject: 'body',
       chunks: ['ui'],
+      cache: false
     }),
     new InlineChunkHtmlPlugin(HtmlWebpackPlugin, ['.js$']),
   ],
