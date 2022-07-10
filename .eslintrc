@@ -9,11 +9,17 @@
     "es2021": true,
     "jquery": true
   },
+  "plugins": ["@babel"],
   "extends": ["eslint:recommended"],
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
+    "babelOptions": {
+      "configFile": "./node_modules/@babel/preset-env/lib/index.js"
+    },
+    
     "ecmaVersion": 12,
     "sourceType": "module"
   }

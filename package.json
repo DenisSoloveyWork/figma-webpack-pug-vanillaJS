@@ -7,10 +7,19 @@
     "dev": "set NODE_ENV=development&&webpack --watch",
     "prod": "set NODE_ENV=production&&webpack"
   },
+  "browserslist": [
+    "last 20 versions",
+    "> 1%"
+  ],
   "keywords": [],
-  "author": "",
+  "author": "Denis Soloviev",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/eslint-plugin": "^7.17.7",
+    "@babel/preset-env": "^7.18.6",
+    "babel-loader": "^8.2.5",
     "css-loader": "^6.6.0",
     "html-webpack-plugin": "^5.5.0",
     "inline-chunk-html-plugin": "^1.1.1",
