@@ -5,3 +5,8 @@
 
 *- Build project -*
 `npm run build`
+
+
+<h1>Addons Docs</h1>
+
+Figma Plugin Helper - https://github.com/figma-plugin-helper-functions/figma-plugin-helpers
