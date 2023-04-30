@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "set NODE_ENV=development&&webpack --watch",
-    "build": "set NODE_ENV=production&&webpack"
+    "prod": "set NODE_ENV=production&&webpack"
   },
   "browserslist": [
     "last 20 versions",
