@@ -4,7 +4,7 @@
 `npm run dev`
 
 *- Build project -*
-`npm run build`
+`npm run prod`
 
 
 <h1>Addons Docs</h1>
