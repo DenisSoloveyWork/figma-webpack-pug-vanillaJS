@@ -22,9 +22,9 @@
     "@figma/plugin-typings": "^1.62.0",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.6.0",
+    "eslint": "^8.11.0",
     "html-webpack-plugin": "^5.5.0",
     "inline-chunk-html-plugin": "^1.1.1",
-    "eslint": "^8.11.0",
     "path": "^0.12.7",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
@@ -39,5 +39,8 @@
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2",
     "webpack-glob-loader": "^1.0.0"
+  },
+  "dependencies": {
+    "@figma-plugin/helpers": "^0.15.2"
   }
 }
