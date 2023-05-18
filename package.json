@@ -41,6 +41,7 @@
     "webpack-glob-loader": "^1.0.0"
   },
   "dependencies": {
-    "@figma-plugin/helpers": "^0.15.2"
+    "@figma-plugin/helpers": "^0.15.2",
+    "@create-figma-plugin/utilities": "^2.4.0"
   }
 }
