@@ -36,7 +36,7 @@ module.exports = {
       { test: /\.(png|jpg|gif|webp|svg)$/, loader: 'url-loader' },
       {
         test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules\/(?!(@create-figma-plugin)\/).*/,
         use: {
           loader: 'babel-loader',
           options: {
