@@ -9,4 +9,6 @@
 
 <h1>Addons Docs</h1>
 
-Figma Plugin Helper - https://github.com/figma-plugin-helper-functions/figma-plugin-helpers
+Figma Plugin Helper | https://github.com/figma-plugin-helper-functions/figma-plugin-helpers
+
+Create Figma Plugin - utilities | https://yuanqing.github.io/create-figma-plugin/utilities/
